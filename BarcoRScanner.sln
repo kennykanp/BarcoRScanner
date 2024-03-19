@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcoRScanner", "BarcoRScan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaRcodeRSanner", "BaRcodeRSanner\BaRcodeRSanner.csproj", "{F6255873-F42B-4FC5-BB89-FF40729F3379}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraMauiTest", "CameraMauiTest\CameraMauiTest.csproj", "{CBB1910C-0D57-47D1-9BC4-032E71F2842E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,12 @@ Global
 		{F6255873-F42B-4FC5-BB89-FF40729F3379}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6255873-F42B-4FC5-BB89-FF40729F3379}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F6255873-F42B-4FC5-BB89-FF40729F3379}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CBB1910C-0D57-47D1-9BC4-032E71F2842E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB1910C-0D57-47D1-9BC4-032E71F2842E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB1910C-0D57-47D1-9BC4-032E71F2842E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CBB1910C-0D57-47D1-9BC4-032E71F2842E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB1910C-0D57-47D1-9BC4-032E71F2842E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB1910C-0D57-47D1-9BC4-032E71F2842E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
