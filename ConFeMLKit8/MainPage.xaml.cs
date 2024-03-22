@@ -1,4 +1,4 @@
-﻿using BarcodeScanner.Mobile;
+﻿using LibreriaKennyXD;
 
 namespace ConFeMLKit8
 {
@@ -7,13 +7,11 @@ namespace ConFeMLKit8
 
         public MainPage()
         {
-            BarcodeScanner.Mobile.Methods.SetSupportBarcodeFormat(BarcodeScanner.Mobile.BarcodeFormats.QRCode);
             InitializeComponent();
-            BarcodeScanner.Mobile.Methods.AskForRequiredPermission();
 
         }
 
-        private void Camera_OnDetected(object sender, BarcodeScanner.Mobile.OnDetectedEventArg e)
+        private void Camera_OnDetected(object sender, OnDetectedEventArg e)
         {
             List<BarcodeResult> obj = e.BarcodeResults;
 

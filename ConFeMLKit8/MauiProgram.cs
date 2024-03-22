@@ -1,4 +1,4 @@
-﻿using BarcodeScanner.Mobile;
+﻿using LibreriaKennyXD;
 using Microsoft.Extensions.Logging;
 
 namespace ConFeMLKit8

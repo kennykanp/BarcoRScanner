@@ -1,6 +1,6 @@
 ﻿namespace LibreriaKennyXD
 {
-    public enum BarcodeTypes
+    public enum BarcodeEnums
     {
         Unknown = 0,
         ContactInfo = 1,
@@ -15,5 +15,18 @@
         GeographicCoordinates = 10,
         CalendarEvent = 11,
         DriversLicense = 12
+    }
+
+    [Flags]
+    public enum BarcodeFormats
+    {
+        Code128 = 1,
+        QRCode = 256,
+    }
+
+    public enum CameraFacing
+    {
+        Back = 0,
+        Front = 1
     }
 }

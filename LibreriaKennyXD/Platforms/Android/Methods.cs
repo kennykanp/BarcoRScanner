@@ -13,35 +13,35 @@ namespace LibreriaKennyXD
     {
        
 
-        internal static BarcodeTypes ConvertBarcodeResultTypes(int barcodeValueType)
+        internal static BarcodeEnums ConvertBarcodeResultTypes(int barcodeValueType)
         {
             switch (barcodeValueType)
             {
                 case Barcode.TypeCalendarEvent:
-                    return BarcodeTypes.CalendarEvent;
+                    return BarcodeEnums.CalendarEvent;
                 case Barcode.TypeContactInfo:
-                    return BarcodeTypes.ContactInfo;
+                    return BarcodeEnums.ContactInfo;
                 case Barcode.TypeDriverLicense:
-                    return BarcodeTypes.DriversLicense;
+                    return BarcodeEnums.DriversLicense;
                 case Barcode.TypeEmail:
-                    return BarcodeTypes.Email;
+                    return BarcodeEnums.Email;
                 case Barcode.TypeGeo:
-                    return BarcodeTypes.GeographicCoordinates;
+                    return BarcodeEnums.GeographicCoordinates;
                 case Barcode.TypeIsbn:
-                    return BarcodeTypes.Isbn;
+                    return BarcodeEnums.Isbn;
                 case Barcode.TypePhone:
-                    return BarcodeTypes.Phone;
+                    return BarcodeEnums.Phone;
                 case Barcode.TypeProduct:
-                    return BarcodeTypes.Product;
+                    return BarcodeEnums.Product;
                 case Barcode.TypeSms:
-                    return BarcodeTypes.Sms;
+                    return BarcodeEnums.Sms;
                 case Barcode.TypeText:
-                    return BarcodeTypes.Text;
+                    return BarcodeEnums.Text;
                 case Barcode.TypeUrl:
-                    return BarcodeTypes.Url;
+                    return BarcodeEnums.Url;
                 case Barcode.TypeWifi:
-                    return BarcodeTypes.WiFi;
-                default: return BarcodeTypes.Unknown;
+                    return BarcodeEnums.WiFi;
+                default: return BarcodeEnums.Unknown;
             }
         }
 
@@ -49,36 +49,11 @@ namespace LibreriaKennyXD
         {
             var formats = Barcode.FormatAllFormats;
 
-            if (barcodeFormats.HasFlag(BarcodeFormats.CodaBar))
-                formats |= Barcode.FormatCodabar;
             if (barcodeFormats.HasFlag(BarcodeFormats.Code128))
                 formats |= Barcode.FormatCode128;
-            if (barcodeFormats.HasFlag(BarcodeFormats.Code93))
-                formats |= Barcode.FormatCode93;
-            if (barcodeFormats.HasFlag(BarcodeFormats.Code39))
-                formats |= Barcode.FormatCode39;
-            if (barcodeFormats.HasFlag(BarcodeFormats.CodaBar))
-                formats |= Barcode.FormatCodabar;
-            if (barcodeFormats.HasFlag(BarcodeFormats.DataMatrix))
-                formats |= Barcode.FormatDataMatrix;
-            if (barcodeFormats.HasFlag(BarcodeFormats.Ean13))
-                formats |= Barcode.FormatEan13;
-            if (barcodeFormats.HasFlag(BarcodeFormats.Ean8))
-                formats |= Barcode.FormatEan8;
-            if (barcodeFormats.HasFlag(BarcodeFormats.Itf))
-                formats |= Barcode.FormatItf;
-            if (barcodeFormats.HasFlag(BarcodeFormats.Pdf417))
                 formats |= Barcode.FormatPdf417;
             if (barcodeFormats.HasFlag(BarcodeFormats.QRCode))
                 formats |= Barcode.FormatQrCode;
-            if (barcodeFormats.HasFlag(BarcodeFormats.Upca))
-                formats |= Barcode.FormatUpcA;
-            if (barcodeFormats.HasFlag(BarcodeFormats.Upce))
-                formats |= Barcode.FormatUpcE;
-            if (barcodeFormats.HasFlag(BarcodeFormats.Aztec))
-                formats |= Barcode.FormatAztec;
-            if (barcodeFormats.HasFlag(BarcodeFormats.All))
-                formats |= Barcode.FormatAllFormats;
             return formats;
         }
         #region Public Methods
