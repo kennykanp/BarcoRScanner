@@ -1,7 +1,6 @@
-﻿using Camera.MAUI;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
-namespace CameraMauiTest
+namespace ConFeMLKit8
 {
     public static class MauiProgram
     {
@@ -10,7 +9,6 @@ namespace CameraMauiTest
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
-                .UseMauiCameraView() // Add the use of the plugging
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
