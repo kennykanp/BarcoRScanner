@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using BarcodeScanner.Mobile;
+using Microsoft.Extensions.Logging;
 
 namespace ConFeMLKit8
 {
@@ -13,6 +14,10 @@ namespace ConFeMLKit8
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                })
+                .ConfigureMauiHandlers( handlers =>
+                {
+                    handlers.AddBarcodeScannerHandler();
                 });
 
 #if DEBUG

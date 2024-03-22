@@ -1,24 +1,34 @@
-﻿namespace ConFeMLKit8
+﻿using BarcodeScanner.Mobile;
+
+namespace ConFeMLKit8
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
 
         public MainPage()
         {
+            BarcodeScanner.Mobile.Methods.SetSupportBarcodeFormat(BarcodeScanner.Mobile.BarcodeFormats.QRCode);
             InitializeComponent();
+            BarcodeScanner.Mobile.Methods.AskForRequiredPermission();
+
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void Camera_OnDetected(object sender, BarcodeScanner.Mobile.OnDetectedEventArg e)
         {
-            count++;
+            List<BarcodeResult> obj = e.BarcodeResults;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+            string result = string.Empty;
+            for (int i = 0; i < obj.Count; i++)
+            {
+                result += $"Type : {obj[i].BarcodeType}, Value: {obj[i].DisplayValue}{Environment.NewLine}";
+            }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            Dispatcher.Dispatch(async () =>
+            {
+                await DisplayAlert("Barcode", result, "OK");
+
+                cameraView.IsScanning = true;
+            });
         }
     }
 

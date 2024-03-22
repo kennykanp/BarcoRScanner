@@ -28,5 +28,8 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
+
+	<key>NSCameraUsageDescription</key>
+	<string>For use the camera for barcode</string>
 </dict>
 </plist>
