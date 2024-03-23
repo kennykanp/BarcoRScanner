@@ -2,17 +2,44 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:gv="clr-namespace:LibreriaKennyXD;assembly=LibreriaKennyXD.Maui;assembly=LibreriaKennyXD.Maui"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Maui.Controls;assembly=SkiaSharp.Views.Maui.Controls"
              x:Class="ConFeMLKit8.MainPage">
 
-    <ScrollView>
+    <!--<ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-           <gv:CameraView x:Name="cameraView"
+            <gv:CameraView x:Name="cameraView"
                           HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" OnDetected="Camera_OnDetected"
                           TorchOn="False" VibrationOnDetected="True" ScanInterval="100"
                           />
+            <skia:SKCanvasView
+                    x:Name="Canvas"
+                    HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                    Grid.Row="1" BackgroundColor="Transparent"
+                    PaintSurface="SKCanvasView_PaintSurface"
+                    IgnorePixelScaling="True" 
+                />
         </VerticalStackLayout>
-    </ScrollView>
+    </ScrollView>-->
+
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <gv:CameraView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" OnDetected="Camera_OnDetected" Grid.Row="1"
+                           TorchOn="False" VibrationOnDetected="False" ScanInterval="50" x:Name="cameraView" IsOCR="True"/>
+        <skia:SKCanvasView
+                x:Name="Canvas"
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                Grid.Row="1" BackgroundColor="Transparent"
+                PaintSurface="SKCanvasView_PaintSurface"
+                IgnorePixelScaling="True" 
+            />
+        <!--<Label Text="Scan QRCode" FontSize="Medium" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Grid.Row="2"
+                   TextColor="Red"/>-->
+    </Grid>
 
 </ContentPage>

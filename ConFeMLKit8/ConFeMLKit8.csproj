@@ -57,8 +57,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.6" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.6" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.7" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.7" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<!--<PackageReference Include="Xamarin.AndroidX.Camera.Core" Version="1.3.2"/>
 		<PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core" Version="2.7.0.1"/>-->
@@ -71,6 +71,7 @@
 	  <ProjectReference Include="..\LibreriaKennyXD\LibreriaKennyXD.csproj" />
 	</ItemGroup>
 	<ItemGroup>
+	  <PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.7" />
 	</ItemGroup>
 
 </Project>
