@@ -13,9 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronBCode", "IronBCode\Iron
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConFeMLKit", "ConFeMLKit\ConFeMLKit.csproj", "{287A9B16-5F5D-4D34-9096-122CFEE096C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConFeMLKit8", "ConFeMLKit8\ConFeMLKit8.csproj", "{CCB1A472-490F-4C7C-8818-088DC5C81921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConFeMLKit8", "ConFeMLKit8\ConFeMLKit8.csproj", "{CCB1A472-490F-4C7C-8818-088DC5C81921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaKennyXD", "LibreriaKennyXD\LibreriaKennyXD.csproj", "{6E6565E2-D46D-479C-A4E9-2C900C2616E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibreriaKennyXD", "LibreriaKennyXD\LibreriaKennyXD.csproj", "{6E6565E2-D46D-479C-A4E9-2C900C2616E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiveMeHopeQR", "GiveMeHopeQR\GiveMeHopeQR.csproj", "{0DD9EA73-83D0-49F4-B345-674942F31B97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,12 @@ Global
 		{6E6565E2-D46D-479C-A4E9-2C900C2616E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E6565E2-D46D-479C-A4E9-2C900C2616E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E6565E2-D46D-479C-A4E9-2C900C2616E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD9EA73-83D0-49F4-B345-674942F31B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD9EA73-83D0-49F4-B345-674942F31B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD9EA73-83D0-49F4-B345-674942F31B97}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0DD9EA73-83D0-49F4-B345-674942F31B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD9EA73-83D0-49F4-B345-674942F31B97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD9EA73-83D0-49F4-B345-674942F31B97}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
